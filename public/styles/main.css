@@ -1,0 +1,19 @@
+body {
+    background-color: #EEF7FF;
+}
+
+.secondary-background {
+    background-color: #CDE8E5;
+}
+
+.third-background {
+    background-color: #7AB2B2;
+}
+
+textarea {
+    display: block;
+}
+
+.top-level {
+    margin: 20px;
+}

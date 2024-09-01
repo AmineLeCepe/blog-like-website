@@ -1,0 +1,35 @@
+<%- include("header.ejs")%>
+<div class="top-level">
+    <div class="post-creation">
+        <form action="/submit" method="post">
+            <label for="title">Your Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="post">Your Post:</label>
+
+            <textarea id="post" name="post" rows="4" cols="50"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="hidden" name="id" value="<%= locals.blogPosts.length %>"/>
+        </form>
+    </div>
+
+    <div class="post-list-display">
+        <% if (locals.blogPosts) {
+        locals.blogPosts.forEach((post) => {
+        %>
+            <div class="post-display">
+                <h1><%= post['title'] %></h1>
+                <p><%= post['post'] %></p>
+                <form action="/delete" method="post">
+                    <input type="button" name="edit" value="Edit" id="edit">
+                    <input type="submit" name="delete" value="Delete" id="delete">
+                    <input type="hidden" name="id" value="<%= post['id']%>"/>
+                </form>
+            </div>
+        <% })
+        }
+        %>
+
+    </div>
+</div>
+<%- include("footer.ejs")%>
