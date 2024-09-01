@@ -1,19 +1,73 @@
 body {
-    background-color: #EEF7FF;
+    background-color: #FFFAFA;
 }
 
-.secondary-background {
-    background-color: #CDE8E5;
+.flex-container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
 }
 
-.third-background {
-    background-color: #7AB2B2;
+.flex-item {
+    flex: 1;
+    text-align: center;
 }
 
-textarea {
-    display: block;
+#title-container {
+    flex: 5;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+}
+
+#blog-title {
+    font-size: 32px;
+    color: #426B1F;
 }
 
 .top-level {
-    margin: 20px;
+    margin: 0px 100px 0px 100px;
 }
+
+#your-posts {
+    font-size: 64px;
+}
+
+.second-header-container {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#number-of-posts {
+    font-size: 20px;
+}
+
+.post-creation {
+    background-color: #FAFAF5;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #E6E6E6;
+    border-radius: 24px;
+}
+
+#your-title {
+    font-size: 20px;
+}
+
+#your-post {
+    font-size: 16px;
+}
+
+.button {
+    background-color: #426B1F;
+    color: #FFFAFA;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px 10px 8px 10px;
+}
+

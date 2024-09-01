@@ -1,14 +1,23 @@
 <%- include("header.ejs")%>
 <div class="top-level">
+    <div class="second-header-container">
+        <p id="your-posts" class="newsreader-semibold">
+            Your posts <span id="number-of-posts">
+                <% if (locals.blogPosts.length > 0) {%>
+                <%= locals.blogPosts.length %> posts
+                <% } %>
+            </span>
+        </p>
+    </div>
     <div class="post-creation">
         <form action="/submit" method="post">
-            <label for="title">Your Title:</label>
+            <label for="title" id="your-title">Your Title:</label> <br>
             <input type="text" id="title" name="title" required><br><br>
-            <label for="post">Your Post:</label>
 
+            <label for="post" id="your-post" class="inter-regular">Your Post:</label> <br>
             <textarea id="post" name="post" rows="4" cols="50"></textarea>
             <br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Upload →" class="button">
             <input type="hidden" name="id" value="<%= locals.blogPosts.length %>"/>
         </form>
     </div>

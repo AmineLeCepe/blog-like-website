@@ -69,3 +69,34 @@
     font-weight: 900;
     font-style: italic;
 }
+
+
+.inter-bold {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.newsreader-bold {
+                 font-family: "Newsreader", serif;
+                 font-optical-sizing: auto;
+                 font-weight: 600;
+                 font-style: normal;
+}
+
+.newsreader-semibold {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
