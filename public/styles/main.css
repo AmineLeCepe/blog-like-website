@@ -71,3 +71,23 @@ p {
     padding: 8px 10px 8px 10px;
 }
 
+.post-list-display {
+    padding: 20px 20px 20px 20px;
+}
+
+.post-display {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+.post-actions {
+    text-align: right;
+}
+
+.hovered {
+    background-color: #2b4412;
+}
+
+a {
+    color: black;
+}

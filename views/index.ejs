@@ -27,13 +27,15 @@
         locals.blogPosts.forEach((post) => {
         %>
             <div class="post-display">
-                <h1><%= post['title'] %></h1>
+                <h1 class="newsreader-semibold" id="post-title"><%= post['title'] %></h1>
                 <p><%= post['post'] %></p>
-                <form action="/delete" method="post">
-                    <input type="button" name="edit" value="Edit" id="edit">
-                    <input type="submit" name="delete" value="Delete" id="delete">
-                    <input type="hidden" name="id" value="<%= post['id']%>"/>
-                </form>
+                <div class="post-actions">
+                    <form action="/delete" method="post">
+                        <input type="button" name="edit" value="Edit" id="edit" class="button">
+                        <input type="submit" name="delete" value="Delete" id="delete" class="button">
+                        <input type="hidden" name="id" value="<%= post['id']%>"/>
+                    </form>
+                </div>
             </div>
         <% })
         }
